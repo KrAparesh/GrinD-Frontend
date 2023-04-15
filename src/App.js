@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { Container } from 'semantic-ui-react';
+
+import 'semantic-ui-css/semantic.min.css';
 import './App.css';
+
+import { AuthContext, AuthProvider } from './context/auth';
+import AuthRoute from './util/AuthRoute';
+
+import MenuBar from './components/MenuBar';
+import Home from './pages/Home';
+import Login from './pages/login';
+import Register from './pages/Register';
+import Error from './pages/Error';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+    <AuthProvider>
+      <Container>
+        <MenuBar />
+          <Routes>
+            {/* TODO: Fix AuthRoute */}
+            <Route exact path = "/" element = {<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path = "*" element = {<Error />} />
+          </Routes>
+      </Container>
+    </AuthProvider>
+    </BrowserRouter>
+  )
 }
 
 export default App;
