@@ -23,6 +23,9 @@ Our platform ensures end-to-end encrypted messages to protect users' privacy and
 - **Roadmap**: Get personalized roadmap and feedback on the choice of your sports.
 - **Task monitoring**: Get your tasks monitored by coaches and industry experts.
 
+## Screenshots
+![Screenshot - Home Page](https://imgur.com/utOU3Wv.jpeg)
 
+![Screenshot - Roadmap](https://imgur.com/8Lqs4jL.jpeg)
 *** 
 Found a bug or want to make suggestions? [Drop a Hi!](contact@kraparesh.co)
