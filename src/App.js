@@ -13,6 +13,9 @@ import Home from './pages/Home';
 import Login from './pages/login';
 import Register from './pages/Register';
 import Error from './pages/Error';
+import Roadmap from './pages/Roadmap';
+
+import Layout from './pages/Layout';
 
 
 function App() {
@@ -23,9 +26,10 @@ function App() {
         <MenuBar />
           <Routes>
             {/* TODO: Fix AuthRoute */}
-            <Route exact path = "/" element = {<Home />} />
+            <Route exact path = "/" element = {<Layout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/Roadmap" element={<Roadmap />} />
             <Route path = "*" element = {<Error />} />
           </Routes>
       </Container>

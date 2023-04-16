@@ -105,6 +105,7 @@ const REGISTER_USER = gql `
     $email: String!
     $password: String!
     $confirmPassword: String!
+    
   ) {
     register (
       registerInput: {

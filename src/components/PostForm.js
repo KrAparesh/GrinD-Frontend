@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Form} from 'semantic-ui-react';
+import {Button, Form, Grid, Image, Segment, Icon} from 'semantic-ui-react';
 import gql from 'graphql-tag';
 import {useMutation} from '@apollo/react-hooks';
 
@@ -25,18 +25,29 @@ function PostForm() {
 
     return (
         <Form onSubmit = {onSubmit}>
-            <h2>Create a post: </h2>
+            {/* <h2>Create a post: </h2> */}
+            <Segment>
             <Form.Field>
-                <Form.Input 
-                    placeholder = "Hi World!"
-                    name="body"
-                    onChange={onChange}
-                    value={values.body}
-                />
-                <Button type = "submit" color="teal">
-                    Submit
-                </Button>
+                <div className="form-avatar">
+                    <Image src='https://react.semantic-ui.com/images/avatar/small/matthew.png' avatar verticalAlign='middle' size='tiny'/>           
+                    <Form.Input size='large' width='13'
+                        placeholder = "What's Happening?"
+                        name="body"
+                        onChange={onChange}
+                        value={values.body}
+                    />
+                </div>
+                <Grid.Column className="btn-submit">
+                    <div>
+                            <Icon name="large image outline" className="sub-buttons" color="teal" aria-label='image upload'/>
+                            <Icon name="large file video" className="sub-buttons" color="teal" aria-label='video upload'/>
+                    </div>
+
+                    <Button type = "submit" color="teal" content="Post" />
+                </Grid.Column>
             </Form.Field>
+
+            </Segment>
         </Form>
     )
 }

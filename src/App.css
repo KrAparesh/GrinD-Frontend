@@ -1,11 +1,75 @@
 .page-title {
   display: block !important;
   text-align: center;
-  font-size: 2rem;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  /* margin-top: 10px; */
+  padding-bottom: 20px;
 }
 
 .form-container {
   width: 400px;
   margin: auto;
+}
+
+.form-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn-submit {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  justify-content: space-between;
+}
+
+.btn-submit div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 97px;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100px;
+}
+
+.sub-buttons {
+  transition: color 300ms;
+}
+
+.sub-buttons:hover {
+  color: #0098A2;
+  cursor: pointer;
+}
+
+.news-list {
+  list-style-type: none;
+}
+
+.btn-read-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/* CSS for RoadMap */
+.head {
+  text-align: center;
+  font-family: pop;
+}
+
+.head_1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+.head_1 span {
+  color: #11b0b8;
+}
+
+.sport-desc {
+  text-align: justify;
 }

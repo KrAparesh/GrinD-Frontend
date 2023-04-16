@@ -3,7 +3,29 @@ import { Card, Icon, Label, Image, Button } from 'semantic-ui-react';
 import moment from 'moment';
 import {Link} from 'react-router-dom'
 
+// Addition
+import gql from 'graphql-tag';
+import { useQuery } from '@apollo/client';
+
 function PostCard({ post: { body, createdAt, id, username, likeCount, commentCount, likes } }) {
+  const {loading, data} = useQuery(GET_USER_QUERY, {
+    variables: { username: username }
+});
+
+var currUser = "null";
+if(!loading){
+    currUser = data?.getUser;
+    console.log(currUser);
+
+}
+var imgSrc = "";
+if(currUser){
+    if(!currUser.iconUrl){
+        imgSrc = "https://react.semantic-ui.com/images/avatar/large/matthew.png"
+    } else {
+        imgSrc = currUser.iconUrl;
+    }
+}
 
   function likePost() {
     console.log('Like Post!');
@@ -19,10 +41,10 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
         <Image
           floated='right'
           size='mini'
-          src='https://react.semantic-ui.com/images/avatar/large/molly.png'
+          src = {imgSrc}
         />
         <Card.Header>{username}</Card.Header>
-        <Card.Meta as={Link} to={`/posts/${id}`} > {moment(createdAt).fromNow(true)}</Card.Meta>
+        <Card.Meta as={Link} to={`/posts/${id}`} > {moment(createdAt).fromNow(false)}</Card.Meta>
         <Card.Description>
           {body}
         </Card.Description>
@@ -54,5 +76,19 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
     </Card>
   )
 }
+
+const GET_USER_QUERY = gql`
+query($username: String!) {
+  getUser(username: $username) {
+    username
+    createdAt
+    email
+    id
+    description
+    iconUrl
+  }
+}
+
+`
 
 export default PostCard
