@@ -66,7 +66,7 @@ function Layout() {
                 <Card.Content>
                     <h2>News</h2>
                     <Divider></Divider>
-                    <NewsHeadline />
+                    {/* <NewsHeadline /> */}
                 </Card.Content>
             </Card>
         </Grid.Row>
