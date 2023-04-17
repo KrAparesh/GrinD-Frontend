@@ -67,6 +67,11 @@ function Layout() {
                     <h2>News</h2>
                     <Divider></Divider>
                     {/* <NewsHeadline /> */}
+                    <Segment>
+                      <h3>Developer message:</h3> 
+                        <p>Due to restrictions of newsAPI, news can't be fetched. It will be fixed soon.</p>
+                      
+                    </Segment>
                 </Card.Content>
             </Card>
         </Grid.Row>
