@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Link to Back-end Repository: https://github.com/KrAparesh/GrinD-Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GrinD | Frontend Guide
 
-## Available Scripts
+The project is a social media platform specifically for sports players and athletes. The platform enables users to like, comment, and upload files and videos. One of the standout features of the platform is the guidance and roadmap we offer to players for various sports.
 
-In the project directory, you can run:
+Our platform ensures end-to-end encrypted messages to protect users' privacy and sensitive information. We verify the legitmacy of each user to protect against fraudulent activity and create a more trustworthy environment for users to engage with each other. The roadmap provided for players is sourced from coaches and industry specialists, hence we offer valuable insights into the best practices for players to develop their skills and succeed in their respective sports.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Contribution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the Repository
+2. Make sure you have npm installed: `npm --version`
+3. Install the dependencies: `npm install`
+4. Use the `npm start` command to start the
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+- **Create Post** : Create posts, upload images and videos
+- **Like Post**: You can like the posts
+- **Comment Posts**: You can comment on posts
+- **Roadmap**: Get personalized roadmap and feedback on the choice of your sports.
+- **Task monitoring**: Get your tasks monitored by coaches and industry experts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
+![Screenshot - Home Page](https://imgur.com/utOU3Wv.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot - Roadmap](https://imgur.com/8Lqs4jL.jpeg)
+*** 
+Found a bug or want to make suggestions? [Drop a Hi!](contact@kraparesh.co)
