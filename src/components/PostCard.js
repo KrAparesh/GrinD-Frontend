@@ -15,7 +15,6 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
 var currUser = "null";
 if(!loading){
     currUser = data?.getUser;
-    console.log(currUser);
 
 }
 var imgSrc = "";
@@ -28,11 +27,11 @@ if(currUser){
 }
 
   function likePost() {
-    console.log('Like Post!');
+    // TODO: Add route to like post
   }
 
   function commentOnPost() {
-    console.log("Comment on post!!");
+    // TODO: Add route to comment on post
   }
 
   return (
